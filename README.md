@@ -8,7 +8,7 @@ This is the foundation library to create PHP widget wrappers for the javascript 
 ## Introduction 
 
 SideKit UI was built with one thing in mind: to help backend developers to create cleaner code. There are many widgets 
-and wrapper libraries out there fully bloated with Javascript and/or HTML tags within their PHP, #C, Java, etc... code 
+and wrapper libraries out there fully bloated with Javascript and/or HTML tags within their PHP, C#, Java, etc... code 
 in order to render the HTML syntax and the Javascript configuration code for a plugin to work. And that is not only 
 ugly, hard to maintain, scale or whatever... but also, you end up breaking separation of concerns at all time, making 
 silly workarounds to be able to have some type hinting abilities in your IDE that doesn't really know whether you are 

@@ -9,7 +9,7 @@ use SideKit\Util\CssHelper;
 /**
  * Class SideKit
  *
- * It encapsulates the initialization of CoderMap core classes and exposes its functionality through static methods.
+ * It encapsulates the initialization of SideKit core classes and exposes its functionality through static methods.
  *
  * @method static Container di()
  * @method static Util\Html html()
