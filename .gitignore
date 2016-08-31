@@ -1,0 +1,10 @@
+/vendor
+/build
+/temp
+/.idea
+composer.phar
+coverage.clover
+Thumbs.db
+nbproject
+switch
+index
