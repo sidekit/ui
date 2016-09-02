@@ -164,9 +164,7 @@ class LightGallery extends AbstractWidget
 }
 ``` 
 
-Assuming you have jquery + lightgallery.js plugin and the following client plugin on the client 
-`sidekit.widget.lightgallery.js` inserted as script after `sidekit-ui-core.js` -you know we can concatenate them on 
-production right?: 
+Assuming you have jquery, the following plugin would inject the required files, render the template : 
 
 ```js 
 (function (SideKit) {

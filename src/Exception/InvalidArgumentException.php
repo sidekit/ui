@@ -5,12 +5,12 @@ use SideKit\Contract\ExceptionInterface;
 
 
 /**
+ * Class InvalidArgumentException
  *
- * InvalidArgumentException.php
+ * Represents an exception caused by invalid parameters passed to a method.
  *
- * Date: 26/8/16
- * Time: 17:25
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
+ * @author Antonio Ramirez <hola@2amigos.us>
+ * @package SideKit\Exception
  */
 class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
 {

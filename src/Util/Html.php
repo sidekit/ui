@@ -5,9 +5,10 @@ namespace SideKit\Util;
  *
  * Class Html
  *
- * Modified version of the Html helper class from yii2 framework. It provides concrete implementation for [[Html]].
+ * Provides concrete implementation for [[Html]].
  *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
+ * @author Antonio Ramirez <hola@2amigos.us>
+ * @package SideKit\Util
  */
 class Html
 {
