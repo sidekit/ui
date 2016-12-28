@@ -1,5 +1,5 @@
 <?php
-namespace SideKit\Util;
+namespace SideKit\Ui\Util;
 
 /**
  *
@@ -8,7 +8,7 @@ namespace SideKit\Util;
  * Provides concrete implementation for [[Html]].
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Util
+ * @package SideKit\Ui\Util
  */
 class Html
 {

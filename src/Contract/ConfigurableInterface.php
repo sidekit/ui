@@ -1,8 +1,9 @@
 <?php
-namespace SideKit\Contract;
+namespace SideKit\Ui\Contract;
+
 /**
  * Interface ConfigurableInterface
- * @package SideKit\Contract
+ * @package SideKit\Ui\Contract
  */
 interface ConfigurableInterface
 {

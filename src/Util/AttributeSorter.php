@@ -1,5 +1,5 @@
 <?php
-namespace SideKit\Util;
+namespace SideKit\Ui\Util;
 
 /**
  * Class AttributeSorter
@@ -7,7 +7,7 @@ namespace SideKit\Util;
  * Sorts the attributes that need to be rendered on a tag
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Util
+ * @package SideKit\Ui\Util
  */
 class AttributeSorter
 {

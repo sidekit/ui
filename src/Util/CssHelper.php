@@ -1,11 +1,11 @@
 <?php
-namespace SideKit\Util;
+namespace SideKit\Ui\Util;
 
 /**
  * Class CssHelper
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Util
+ * @package SideKit\Ui\Util
  */
 class CssHelper
 {
@@ -17,7 +17,7 @@ class CssHelper
      *
      * ```php
      * $options = ['class' => ['persistent' => 'initial']];
-     * SideKit::html()->css()->addCssClass($options, ['persistent' => 'override']);
+     * UiKit::html()->css()->addCssClass($options, ['persistent' => 'override']);
      * var_dump($options['class']); // outputs: array('persistent' => 'initial');
      * ```
      *
@@ -98,7 +98,7 @@ class CssHelper
      * For example,
      *
      * ```php
-     * SideKit::html()->css()->addCssStyle($options, 'width: 100px; height: 200px');
+     * UiKit::html()->css()->addCssStyle($options, 'width: 100px; height: 200px');
      * ```
      *
      * @param array $options the HTML options to be modified.
@@ -134,7 +134,7 @@ class CssHelper
      * For example,
      *
      * ```php
-     * SideKit::html()->css()->removeCssStyle($options, ['width', 'height']);
+     * UiKit::html()->css()->removeCssStyle($options, ['width', 'height']);
      * ```
      *
      * @param array $options the HTML options to be modified.
@@ -160,7 +160,7 @@ class CssHelper
      * For example,
      *
      * ```php
-     * print_r(SideKit::html()->css()->cssStyleFromArray(['width' => '100px', 'height' => '200px']));
+     * print_r(UiKit::html()->css()->cssStyleFromArray(['width' => '100px', 'height' => '200px']));
      * // will display: 'width: 100px; height: 200px;'
      * ```
      *
@@ -189,7 +189,7 @@ class CssHelper
      * For example,
      *
      * ```php
-     * print_r(SideKit::html()->css()->cssStyleToArray('width: 100px; height: 200px;'));
+     * print_r(UiKit::html()->css()->cssStyleToArray('width: 100px; height: 200px;'));
      * // will display: ['width' => '100px', 'height' => '200px']
      * ```
      *

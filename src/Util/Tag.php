@@ -1,13 +1,13 @@
 <?php
-namespace SideKit\Util;
+namespace SideKit\Ui\Util;
 
-use SideKit\SideKit;
+use SideKit\Ui\UiKit;
 
 /**
  * Class Tag
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Util
+ * @package SideKit\Ui\Util
  */
 class Tag
 {
@@ -77,7 +77,7 @@ class Tag
      */
     public function renderAttributes()
     {
-        $attributes = SideKit::html()->sortTagAttributes($this->attributes);
+        $attributes = UiKit::html()->sortTagAttributes($this->attributes);
         $html = '';
         foreach ($attributes as $name => $value) {
             if (is_bool($value)) {
@@ -88,27 +88,27 @@ class Tag
                 if ($name === 'data') {
                     foreach ($value as $n => $v) {
                         if (is_array($v)) {
-                            $html .= " $name-$n='" . SideKit::encoders()->json()->htmlEncode($v) . "'";
+                            $html .= " $name-$n='" . UiKit::encoders()->json()->htmlEncode($v) . "'";
                         } else {
-                            $html .= " $name-$n=\"" . SideKit::encoders()->html()->encode($v) . '"';
+                            $html .= " $name-$n=\"" . UiKit::encoders()->html()->encode($v) . '"';
                         }
                     }
                 } elseif ($name === 'class') {
                     if (empty($value)) {
                         continue;
                     }
-                    $html .= " $name=\"" . SideKit::encoders()->html()->encode(implode(' ', $value)) . '"';
+                    $html .= " $name=\"" . UiKit::encoders()->html()->encode(implode(' ', $value)) . '"';
                 } elseif ($name === 'style') {
                     if (empty($value)) {
                         continue;
                     }
                     $html .= " $name=\"" .
-                        SideKit::encoders()->html()->encode(SideKit::html()->css()->cssStyleFromArray($value)) . '"';
+                        UiKit::encoders()->html()->encode(UiKit::html()->css()->cssStyleFromArray($value)) . '"';
                 } else {
-                    $html .= " $name='" . SideKit::encoders()->json()->htmlEncode($value) . "'";
+                    $html .= " $name='" . UiKit::encoders()->json()->htmlEncode($value) . "'";
                 }
             } elseif ($value !== null) {
-                $html .= " $name=\"" . SideKit::encoders()->html()->encode($value) . '"';
+                $html .= " $name=\"" . UiKit::encoders()->html()->encode($value) . '"';
             }
         }
 

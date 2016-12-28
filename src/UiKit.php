@@ -1,10 +1,10 @@
 <?php
-namespace SideKit;
+namespace SideKit\Ui;
 
 use League\Container\Container;
 use BadFunctionCallException;
-use SideKit\Util\AttributeSorter;
-use SideKit\Util\CssHelper;
+use SideKit\Ui\Util\AttributeSorter;
+use SideKit\Ui\Util\CssHelper;
 
 /**
  * Class SideKit
@@ -18,7 +18,7 @@ use SideKit\Util\CssHelper;
  * @author Antonio Ramirez <hola@2amigos.us>
  * @package SideKit
  */
-class SideKit
+class UiKit
 {
     /**
      * @param string $name
@@ -35,7 +35,7 @@ class SideKit
         if ($name === 'di') {
             return $e;
         } elseif (!$e->has($name)) {
-            throw new BadFunctionCallException("Unrecognized function name: SideKit::{$name}.");
+            throw new BadFunctionCallException("Unrecognized function name: UiKit::{$name}.");
         }
 
         return $e->get($name);
@@ -49,11 +49,11 @@ class SideKit
         $container = new Container();
 
         $container
-            ->add('html', 'SideKit\Util\Html')
+            ->add('html', 'SideKit\Ui\Util\Html')
             ->withArgument(new AttributeSorter())
             ->withArgument(new CssHelper());
 
-        $container->add('json', 'SideKit\Encoder\Json');
+        $container->add('encoders', 'SideKit\Ui\Encoder\EncodersContainer');
 
         return $container;
     }

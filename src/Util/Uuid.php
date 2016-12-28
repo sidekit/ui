@@ -1,10 +1,10 @@
 <?php
-namespace SideKit\Util;
+namespace SideKit\Ui\Util;
 /**
  * Class Uuid
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Util
+ * @package SideKit\Ui\Util
  */
 class Uuid
 {

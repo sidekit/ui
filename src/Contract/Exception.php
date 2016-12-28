@@ -1,9 +1,9 @@
 <?php
-namespace SideKit\Contract;
+namespace SideKit\Ui\Contract;
 
 /**
  * Interface ExceptionInterface
- * @package SideKit\Contract
+ * @package SideKit\Ui\Contract
  */
 interface ExceptionInterface
 {

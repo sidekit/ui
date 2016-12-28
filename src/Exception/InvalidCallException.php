@@ -1,7 +1,7 @@
 <?php
-namespace SideKit\Exception;
+namespace SideKit\Ui\Exception;
 
-use SideKit\Contract\ExceptionInterface;
+use SideKit\Ui\Contract\ExceptionInterface;
 
 /**
  * Class InvalidCallException
@@ -9,7 +9,7 @@ use SideKit\Contract\ExceptionInterface;
  * Represents an exception caused by calling a method in a wrong way.
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Exception
+ * @package SideKit\Ui\Exception
  */
 class InvalidCallException extends \BadMethodCallException implements ExceptionInterface
 {

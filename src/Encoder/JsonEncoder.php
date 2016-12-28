@@ -1,7 +1,7 @@
 <?php
-namespace SideKit\Encoder;
+namespace SideKit\Ui\Encoder;
 
-use SideKit\Exception\InvalidArgumentException;
+use SideKit\Ui\Exception\InvalidArgumentException;
 use JsonSerializable;
 use stdClass;
 use SimpleXMLElement;
@@ -10,7 +10,7 @@ use SimpleXMLElement;
  * Class JsonEncoder
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Encoder
+ * @package SideKit\Ui\Encoder
  */
 class JsonEncoder
 {

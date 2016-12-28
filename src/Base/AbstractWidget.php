@@ -1,7 +1,7 @@
 <?php
-namespace SideKit\Base;
+namespace SideKit\Ui\Base;
 
-use SideKit\Contract\ConfigurableInterface;
+use SideKit\Ui\Contract\ConfigurableInterface;
 
 /**
  * Class AbstractWidget
@@ -9,7 +9,7 @@ use SideKit\Contract\ConfigurableInterface;
  * This the base class for all widgets
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Base
+ * @package SideKit\Ui\Base
  */
 abstract class AbstractWidget implements ConfigurableInterface
 {

@@ -1,8 +1,8 @@
 <?php
-namespace SideKit\Encoder;
+namespace SideKit\Ui\Encoder;
 
 use League\Container\Container;
-use SideKit\Exception\InvalidCallException;
+use SideKit\Ui\Exception\InvalidCallException;
 
 /**
  * Class EncodersContainer
@@ -12,7 +12,7 @@ use SideKit\Exception\InvalidCallException;
  * @method static JsonEncoder json()
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Encoder
+ * @package SideKit\Ui\Encoder
  */
 class EncodersContainer
 {
@@ -25,7 +25,7 @@ class EncodersContainer
         if ($name === 'di') {
             return $e;
         } elseif (!$e->has($name)) {
-            throw new InvalidCallException("Unrecognized encoder: SideKit::encoders::{$name}.");
+            throw new InvalidCallException("Unrecognized encoder: UiKit::encoders::{$name}.");
         }
 
         return $e->get($name);
@@ -38,8 +38,8 @@ class EncodersContainer
     {
         $container = new Container();
 
-        $container->add('html', 'SideKit\Encoder\HtmlEncoder');
-        $container->add('json', 'SideKit\Encoder\JsonEncoder');
+        $container->add('html', 'SideKit\Ui\Encoder\HtmlEncoder');
+        $container->add('json', 'SideKit\Ui\Encoder\JsonEncoder');
 
         return $container;
     }

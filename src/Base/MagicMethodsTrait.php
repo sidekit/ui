@@ -1,15 +1,15 @@
 <?php
-namespace SideKit\Base;
+namespace SideKit\Ui\Base;
 
-use SideKit\Exception\InvalidCallException;
-use SideKit\Exception\UnknownMethodException;
-use SideKit\Exception\UnknownPropertyException;
+use SideKit\Ui\Exception\InvalidCallException;
+use SideKit\Ui\Exception\UnknownMethodException;
+use SideKit\Ui\Exception\UnknownPropertyException;
 
 /**
  * Class MagicMethodsTrait
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Base
+ * @package SideKit\Ui\Base
  */
 trait MagicMethodsTrait
 {

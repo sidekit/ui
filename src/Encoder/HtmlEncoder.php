@@ -1,11 +1,11 @@
 <?php
-namespace SideKit\Encoder;
+namespace SideKit\Ui\Encoder;
 
 /**
  * Class HtmlEncoder
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Encoder
+ * @package SideKit\Ui\Encoder
  */
 class HtmlEncoder
 {

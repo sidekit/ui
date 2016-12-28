@@ -1,7 +1,7 @@
 <?php
-namespace SideKit\Exception;
+namespace SideKit\Ui\Exception;
 
-use SideKit\Contract\ExceptionInterface;
+use SideKit\Ui\Contract\ExceptionInterface;
 
 
 /**
@@ -10,7 +10,7 @@ use SideKit\Contract\ExceptionInterface;
  * Represents an exception caused by invalid parameters passed to a method.
  *
  * @author Antonio Ramirez <hola@2amigos.us>
- * @package SideKit\Exception
+ * @package SideKit\Ui\Exception
  */
 class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
 {
